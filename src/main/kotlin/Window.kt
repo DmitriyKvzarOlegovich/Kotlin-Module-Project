@@ -46,10 +46,10 @@ fun choice(type: String): Int {               //Функция Создание 
     clearConsole()
 }
     fun new(type: String): String {              // Функция создания нового элемента
-        //println("защел в новый")
+
         val scanner = Scanner(System.`in`)
         var inStr:String
-        //inStr = scanner.nextLine()
+
         println("Введите имя $type")
         inStr = scanner.nextLine()
         return inStr
@@ -68,7 +68,6 @@ fun choice(type: String): Int {               //Функция Создание 
 
         if (scanner.hasNextInt()) {       // проверка на интовую переменную
             inStr = scanner.nextInt()     //
-            // println("защел в инт $inStr")
             if (inStr==0) {return null}
             if (inStr<=list.size) {                 // проверка на выбор меню
 
@@ -81,8 +80,4 @@ fun choice(type: String): Int {               //Функция Создание 
 
         }
     }
-
-
-
-
 }
