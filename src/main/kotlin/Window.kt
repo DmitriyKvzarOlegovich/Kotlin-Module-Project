@@ -50,9 +50,17 @@ fun choice(type: String): Int {               //Функция Создание 
         val scanner = Scanner(System.`in`)
         var inStr:String
 
+        while (true){
         println("Введите имя $type")
         inStr = scanner.nextLine()
-        return inStr
+
+        if (inStr.trim() == "") {
+            println("Наименование $type не может быть пустым")
+        }
+        //println("ВВедите Новое содержание заметки ${nameNote}")
+        else { return inStr }
+        }
+
         }
     fun <T> change(list: ArrayList<T>,): T? {    //функция выбора из списка элементов
 
